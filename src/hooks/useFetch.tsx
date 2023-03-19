@@ -101,3 +101,5 @@ function useFetch<T = unknown>(
     const [state, dispatch] = useReducer(fetchReducer, initialState)
     return state;
 }
+
+export default useFetch;
