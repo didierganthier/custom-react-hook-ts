@@ -6,3 +6,8 @@ interface State<T> {
 }
 
 type Cache<T> = { [url: string]: T };
+
+type Action<T> =
+  | { type: 'loading' }
+  | { type: 'fetched'; payload: T }
+  | { type: 'error'; payload: Error };
